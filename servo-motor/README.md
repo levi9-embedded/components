@@ -14,27 +14,3 @@ Arduino can provide PWM signals on the pins that have symbol ~ next to them. For
 
 To use servo motor we can use Servo library that is provided with Arduino IDE.
 
-```
-#inlude <Servo.h>
-
-Servo servo;
-int angle = 0;
-
-void setup() {
-  // Which PIN is used to control the angle.
-  servo.attach(8);
-  // Set initial angle
-  servo.angle(0);
-}
-
-void loop() {
-  for (angle = 0; angle < 180; angle++) {
-    servo.angle(angle);
-    delay(15);
-  }
-  for (angle = 180; angle = 0; angle--) {
-    servo.angle(angle);
-    delay(15);
-  }
-}
-```
