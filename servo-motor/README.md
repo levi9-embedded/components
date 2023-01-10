@@ -12,5 +12,5 @@ Pin | Wire | Description
 
 Arduino can provide PWM signals on the pins that have symbol ~ next to them. For Arduino Uno these are (3, 5, 6, 9, 10, or 11) pins.
 
-To use servo motor we can use Servo library that is provided with Arduino IDE.
+To use servo motor we can use Servo library that is provided with Arduino IDE.  
 
