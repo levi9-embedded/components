@@ -10,8 +10,31 @@ Pin | Wire | Description
 2 | Red | Connected to 5v
 3 | Orange | Connected to PWM source
 
-PWM - Power Width Modulation
+Arduino can provide PWM signals on the pins that have symbol ~ next to them. For Arduino Uno these are (3, 5, 6, 9, 10, or 11) pins.
 
-To control the position of the servo motor we need to use arduino output that has the ability to provide PWM signal. That means that in addition of providing 0v and 5v on the pin, it can also provide signal that periodically alternates between 0v and 5v.
+To use servo motor we can use Servo library that is provided with Arduino IDE.
 
-<img src="https://user-images.githubusercontent.com/5618092/208847188-f6adc689-a070-4238-a54b-ee0c6db17b41.png" width="500"  />
+```
+#inlude <Servo.h>
+
+Servo servo;
+int angle = 0;
+
+void setup() {
+  // Which PIN is used to control the angle.
+  servo.attach(8);
+  // Set initial angle
+  servo.angle(0);
+}
+
+void loop() {
+  for (angle = 0; angle < 180; angle++) {
+    servo.angle(angle);
+    delay(15);
+  }
+  for (angle = 180; angle = 0; angle--) {
+    servo.angle(angle);
+    delay(15);
+  }
+}
+```
