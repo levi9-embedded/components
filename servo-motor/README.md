@@ -2,7 +2,7 @@
 
 <img src="https://user-images.githubusercontent.com/5618092/208848391-07676e17-4ca4-4a70-bf74-12be225385b8.jpg" width="300"  />
 
-Servo motor can rotate approximately 180 degrees (90 degrees in each direction).
+Servo motor can perform rotation from 0 to 180 degrees.
 
 Pin | Wire | Description
 --- | --- | ---
