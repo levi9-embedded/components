@@ -1,16 +1,14 @@
 # LCD module 16x2
 
-<img src="https://user-images.githubusercontent.com/5618092/209107668-ceed0d0d-f72b-488f-90f9-d80ac449f4dd.png" width="400"  />
+The following is a module with included adapter that allows simpler I2C communication using only two wires:
 
-Things of interest: 
+<img src="https://user-images.githubusercontent.com/5618092/212165560-75f1b71a-b89d-43ce-aeb2-116f7543321f.jpg" width="400"  />
 
-- Module pins available
-- How to connect to arduino
-- Protocol of communication used
-- Commands accepted
-- Display information sent from serial
-  First Line;Second Line
-- Create ability to display sequence of test screens
-  * Turn on all pixels
-  * Scroll message
-  * Show custom characters
+| PIN | Description |
+| --- | ----------- |
+| GND | Negative system power supply |
+| VCC | System power supply positive |
+| SDA | IIC data cable |
+| SCL | IIC clock line |
+
+TODO: Describe or include image of connection with pins of Arduino.
