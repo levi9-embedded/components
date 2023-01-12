@@ -1,3 +1,10 @@
+/* Move the servo motor sequentially to following positions:
+ * - 0 degrees (min)
+ * - 90 degrees
+ * - 180 degrees (max)
+ * Add 4 seconds delay after each position and loop continuously.
+*/
+
 #include <Servo.h>
 
 Servo servo;
