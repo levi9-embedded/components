@@ -20,5 +20,20 @@ It has following pins:
 
 Data sheet for DS1302 is provided in repository.
 
-TODO: Describe how to connect it with Arduino.
+# Connecting with arduino
+
+CLK ( SCLK ), DAT ( I/O ) and RST ( CE ) should be connected to digital pins on arduino.
+
+# Usage
+
+For usage see rtc-library
+
+# Bugs
+
+After calling set24HourMode device reboot is required to properly apply this setting
+
+# Not implemented
+
+Trickle charging ( battery charging )
+
 
