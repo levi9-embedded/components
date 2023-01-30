@@ -1,8 +1,11 @@
-# LCD 7 segment, 4 digit
+# MAX7219 Dot Matrix Module
 
 TM1637 4-digit 7-segment LED display
 
-<img src="https://user-images.githubusercontent.com/5618092/212178082-e162a78d-ea8a-4edf-ad7b-c49771d5f552.png" width="400"  />
+<img src="https://user-images.githubusercontent.com/5618092/215501560-d1621c8c-d9d7-42d2-bd20-b4e181574122.png" width="400"  />
+
+Attached is datasheet for TM1637 display driver chip.
+
 
 It uses the following PIN's:
 
