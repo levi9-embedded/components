@@ -55,14 +55,6 @@ const uint8_t digitToSegment[] = {
 // The amount of time (in milliseconds) between tests
 #define TEST_DELAY   200
 
-const uint8_t SEG_DONE[] = {
-	SEG_B | SEG_C | SEG_D | SEG_E | SEG_G,           // d
-	SEG_A | SEG_B | SEG_C | SEG_D | SEG_E | SEG_F,   // O
-	SEG_C | SEG_E | SEG_G,                           // n
-	SEG_A | SEG_D | SEG_E | SEG_F | SEG_G            // E
-	};
-
-
 class TM1637Display {
 
 public:
@@ -281,19 +273,19 @@ void runForever(int maxCount = 9999, int forever = 1)
   
   if(forever)
   {
-    for(i = 0; i <= 9999; i++) 
+    for(i = 0; i <= maxCount; i++) 
     {
       display.showNumberDec(i,true);
-	    delay(TEST_DELAY);
-	  }
+      delay(TEST_DELAY);
+    }
   }
   else
   {
-    for(i = 0; i <= 9999; i++) 
+    for(i = 0; i <= maxCount; i++) 
     {
       display.showNumberDec(i,true);
-	    delay(TEST_DELAY);
-	  }
+      delay(TEST_DELAY);
+    }
     display.showNumberDec(0,true);
     while(1);
   }
