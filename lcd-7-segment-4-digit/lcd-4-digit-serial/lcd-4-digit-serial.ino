@@ -270,7 +270,14 @@ TM1637Display display(CLK, DIO);
 void runForever(int maxCount = 9999, int forever = 1)
 {
   int i;
-  
+  if(maxCount < 0 || maxCount > 9999)
+  {
+     maxCount = 9999;
+  }
+  if(forever < 0 || forever > 1)
+  { 
+     forever = 1;   	  
+  }
   if(forever)
   {
     for(i = 0; i <= maxCount; i++) 
