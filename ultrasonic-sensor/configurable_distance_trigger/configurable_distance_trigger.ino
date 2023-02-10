@@ -12,8 +12,8 @@
 #define DECREMENT_VALUE 10
 
 //Constants
-const unsigned int trigPin = 13;
-const unsigned int echoPin = 12;
+const unsigned int trigPin = 12;
+const unsigned int echoPin = 11;
 const unsigned int keyPin1 = 10;
 const unsigned int keyPin2 = 9;
 
@@ -21,7 +21,7 @@ const unsigned int keyPin2 = 9;
 int distanceToCapture     = MAX_DISTANCE;
 unsigned int distanceInCm = 0;
 bool isObjectCaptured     = false;
-//bool isLedOn              = false;
+bool isLedOn              = false;
 
 //Function prototypes
 void calculateDistance(const unsigned int& trigPin, const unsigned int& echoPin);
@@ -34,7 +34,7 @@ void setup() {
   pinMode(echoPin, INPUT);
   pinMode(keyPin1, INPUT_PULLUP);
   pinMode(keyPin2, INPUT_PULLUP);
-//  pinMode(LED_BUILTIN, OUTPUT);
+  pinMode(LED_BUILTIN, OUTPUT);
 }
 
 void loop() {
@@ -73,8 +73,8 @@ void loop() {
   {
     if (!isObjectCaptured)
     {
-//    digitalWrite(LED_BUILTIN, isLedOn ? LOW : HIGH);
-//    isLedOn = !isLedOn
+      digitalWrite(LED_BUILTIN, isLedOn ? LOW : HIGH);
+      isLedOn = !isLedOn;
       isObjectCaptured = true; 
       Serial.print("Captured object on: ");
     }
