@@ -1,0 +1,2 @@
+# Configurable distance trigger
+
