@@ -1,4 +1,4 @@
-/*  
+/*  Send four different commands to the receiver.
  *
  */
 
