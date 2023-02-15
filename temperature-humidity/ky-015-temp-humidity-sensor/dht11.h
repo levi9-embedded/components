@@ -1,5 +1,5 @@
 //------------------------------
-// 
+//
 // DHT11 library header file
 //------------------------------
 
@@ -19,20 +19,18 @@ class dht11
     float _temperature;
     float _humidity;
     int   stateChangeOrTimeout(uint16_t timePeriod, const uint8_t pin, const uint16_t state);
-	
+  
   public:
     dht11();
-
-    //Read data from DHT11 sensor
-	  int readData(const uint8_t pin);
-	
+    int readData(const uint8_t pin);
+    
     //Get temperature value read from DHT11 sensor
-	  float getTemperature() 
+    float getTemperature()
     {
       return _temperature;
     }
     //Get humidity value read from DHT11 sensor
-	  float getHumidity()
+    float getHumidity()
     {
       return _humidity;
     }
