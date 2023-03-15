@@ -1,5 +1,5 @@
 //------------------------------
-// 
+//
 // DHT11 library source file
 //------------------------------
 
@@ -9,7 +9,7 @@ dht11::dht11():_temperature(0),
                _humidity(0)
 { /*c'tor*/ };
 
-dht11::stateChangeOrTimeout(uint16_t timePeriod, const uint8_t pin, const uint16_t state)
+int dht11::stateChangeOrTimeout(uint16_t timePeriod, const uint8_t pin, const uint16_t state)
 {
   uint32_t startTime = micros();
   while(digitalRead(pin) == state)
@@ -19,8 +19,8 @@ dht11::stateChangeOrTimeout(uint16_t timePeriod, const uint8_t pin, const uint16
   
   return DHTLIB_STATE_CHANGED;
 }
-			
-dht11::readData(const uint8_t pin)
+
+int dht11::readData(const uint8_t pin)
 {
   byte receiveBuffer[5];
   uint8_t  idx = 0;
@@ -70,5 +70,3 @@ dht11::readData(const uint8_t pin)
 
   return DHTLIB_OK;
 };
-
-			   
