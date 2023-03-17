@@ -1,4 +1,4 @@
-/* 
+/* Check that all memory locations are valid.
  */
 
 
