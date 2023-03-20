@@ -6,7 +6,6 @@
 
 #define LIGHT_SENSOR A0   // the light sensor is connected to analog pin 0
 #define LED_OUT 13 // integrated led which will be used as "night-lamp"
-#define THRESHOLD 14 // threshold value to decide when the detected sound is a knock or not
 #define LIGHT_ON_INTERVAL_MILLI 5000 // Defined interval until "night-lamp overheat", value is represented in milliseconds
 
 //Light upper-threshold values by light type
