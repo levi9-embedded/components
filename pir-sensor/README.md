@@ -1,6 +1,5 @@
 # pir-sensor
 
-<img src="https://user-images.githubusercontent.com/5618092/226268408-9bc47baa-41ed-4b09-9219-8b00686b42b2.png" width="300"/>
-
+<img src="https://user-images.githubusercontent.com/5618092/228860783-a0a53543-0922-406f-9e6a-11eb265e9585.png" width="300"/>
 
 
